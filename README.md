@@ -1,11 +1,11 @@
 draw2d
 ======
 
-Package draw2d is a pure [go](http://golang.org) 2D vector graphics library with support for multiple output devices such as [images](http://golang.org/pkg/image) (draw2d), pdf documents (draw2dpdf) and opengl (draw2dgl), which can also be used on the google app engine. It can be used as a pure go [Cairo](http://www.cairographics.org/) alternative. draw2d is released under the BSD license. See the [documentation](http://godoc.org/github.com/llgcode/draw2d) for more details.
+Package draw2d is a pure [go](http://golang.org) 2D vector graphics library with support for multiple output devices such as [images](http://golang.org/pkg/image) (draw2d), pdf documents (draw2dpdf) and opengl (draw2dgl), which can also be used on the google app engine. It can be used as a pure go [Cairo](http://www.cairographics.org/) alternative. draw2d is released under the BSD license. See the [documentation](http://godoc.org/github.com/sksullivan/draw2d) for more details.
 
 [![geometry](https://raw.githubusercontent.com/llgcode/draw2d/master/output/samples/geometry.png)](https://raw.githubusercontent.com/llgcode/draw2d/master/resource/image/geometry.pdf)[![postscript](https://raw.githubusercontent.com/llgcode/draw2d/master/output/samples/postscript.png)](https://raw.githubusercontent.com/llgcode/draw2d/master/resource/image/postscript.pdf)
 
-Click on an image above to get the pdf, generated with exactly the same draw2d code. The first image is the output of `samples/geometry`. The second image is the result of `samples/postcript`, which demonstrates that draw2d can draw postscript files into images or pdf documents with the [ps](https://github.com/llgcode/ps) package.
+Click on an image above to get the pdf, generated with exactly the same draw2d code. The first image is the output of `samples/geometry`. The second image is the result of `samples/postcript`, which demonstrates that draw2d can draw postscript files into images or pdf documents with the [ps](https://github.com/sksullivan/ps) package.
 
 Features
 --------
@@ -26,7 +26,7 @@ go get -u gopkg.in/llgcode/draw2d.v1
 
 or Current release
 ```
-go get -u github.com/llgcode/draw2d
+go get -u github.com/sksullivan/draw2d
 ```
 
 
@@ -79,7 +79,7 @@ gc.FillStroke()
 draw2dpdf.SaveToPdfFile("hello.pdf", dest)
 ```
 
-There are more examples here: https://github.com/llgcode/draw2d/tree/master/samples
+There are more examples here: https://github.com/sksullivan/draw2d/tree/master/samples
 
 Drawing on opengl is provided by the draw2dgl package.
 
@@ -99,14 +99,14 @@ This will generate output by the different backends in the output folder.
 Acknowledgments
 ---------------
 
-[Laurent Le Goff](https://github.com/llgcode) wrote this library, inspired by [Postscript](http://www.tailrecursive.org/postscript) and [HTML5 canvas](http://www.w3.org/TR/2dcontext/). He implemented the image and opengl backend with the [freetype-go](https://code.google.com/p/freetype-go/) package. Also he created a pure go [Postscript interpreter](https://github.com/llgcode/ps), which can read postscript images and draw to a draw2d graphic context. [Stani Michiels](https://github.com/stanim) implemented the pdf backend with the [gofpdf](https://github.com/jung-kurt/gofpdf) package.
+[Laurent Le Goff](https://github.com/llgcode) wrote this library, inspired by [Postscript](http://www.tailrecursive.org/postscript) and [HTML5 canvas](http://www.w3.org/TR/2dcontext/). He implemented the image and opengl backend with the [freetype-go](https://code.google.com/p/freetype-go/) package. Also he created a pure go [Postscript interpreter](https://github.com/sksullivan/ps), which can read postscript images and draw to a draw2d graphic context. [Stani Michiels](https://github.com/stanim) implemented the pdf backend with the [gofpdf](https://github.com/jung-kurt/gofpdf) package.
 
 
 
 Packages using draw2d
 ---------------------
 
- - [ps](https://github.com/llgcode/ps): Postscript interpreter written in Go
+ - [ps](https://github.com/sksullivan/ps): Postscript interpreter written in Go
  - [gonum/plot](https://github.com/gonum/plot): drawing plots in Go
  - [go.uik](https://github.com/skelterjohn/go.uik): a concurrent UI kit written in pure go.
  - [smartcrop](https://github.com/muesli/smartcrop): content aware image cropping

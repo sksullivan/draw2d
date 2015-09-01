@@ -7,9 +7,9 @@ package line
 import (
 	"image/color"
 
-	"github.com/llgcode/draw2d"
-	"github.com/llgcode/draw2d/draw2dkit"
-	"github.com/llgcode/draw2d/samples"
+	"github.com/sksullivan/draw2d"
+	"github.com/sksullivan/draw2d/draw2dkit"
+	"github.com/sksullivan/draw2d/samples"
 )
 
 // Main draws vertically spaced lines and returns the filename.

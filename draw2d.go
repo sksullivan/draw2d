@@ -19,7 +19,7 @@
 // Installation
 //
 // To install or update the package draw2d on your system, run:
-//   go get -u github.com/llgcode/draw2d
+//   go get -u github.com/sksullivan/draw2d
 //
 // Quick Start
 //
@@ -46,7 +46,7 @@
 //   draw2d.SaveToPngFile("hello.png", dest)
 //
 // There are more examples here:
-// https://github.com/llgcode/draw2d/tree/master/samples
+// https://github.com/sksullivan/draw2d/tree/master/samples
 //
 // Drawing on pdf documents is provided by the draw2dpdf package.
 // Drawing on opengl is provided by the draw2dgl package.
@@ -68,12 +68,12 @@
 // HTML5 canvas. He implemented the image and opengl backend with the
 // freetype-go package. Also he created a pure go Postscript
 // interpreter, which can read postscript images and draw to a draw2d
-// graphic context (https://github.com/llgcode/ps). Stani Michiels
+// graphic context (https://github.com/sksullivan/ps). Stani Michiels
 // implemented the pdf backend with the gofpdf package.
 //
 // Packages using draw2d
 //
-// - https://github.com/llgcode/ps: Postscript interpreter written in Go
+// - https://github.com/sksullivan/ps: Postscript interpreter written in Go
 //
 // - https://github.com/gonum/plot: drawing plots in Go
 //

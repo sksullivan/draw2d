@@ -6,10 +6,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/llgcode/ps"
+	"github.com/sksullivan/ps"
 
-	"github.com/llgcode/draw2d"
-	"github.com/llgcode/draw2d/samples"
+	"github.com/sksullivan/draw2d"
+	"github.com/sksullivan/draw2d/samples"
 )
 
 // Main draws the tiger
